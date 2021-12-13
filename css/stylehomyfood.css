@@ -497,6 +497,27 @@ body
     padding-left: 15px;
 }
 
+.menufadein1
+{
+    animation: fadeIn 2s;
+}
+.menufadein2
+{
+    animation: fadeIn 3s;
+}
+.menufadein3
+{
+    animation: fadeIn 4s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .btnmenupad
 {
     padding-left: 10px;
