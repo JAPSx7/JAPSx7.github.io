@@ -509,6 +509,10 @@ body
 {
     animation: fadeIn 4s;
 }
+.menufadein4
+{
+    animation: fadeIn 5s;
+}
 @keyframes fadeIn{
     from{
         opacity: 0;
