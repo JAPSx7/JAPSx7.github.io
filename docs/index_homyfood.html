@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="docs/css/stylehomyfood.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1e285b49f.js" crossorigin="anonymous"></script>
+    <title>Homyfood</title>
+</head>
+
+<body>
+    <!--loader-->
+    <div class="loader_b loaderfadeout">
+        <div class="loade"></div>
+    </div>
+
+    <nav class="Nav">
+        <img src="images/logo/ohmyfood.png" alt="homyfood">
+    </nav>
+
+    <header class="margtop">
+        <div class="map flexcentre">
+            <i class="fas fa-map-marker-alt margicon"></i>
+            <p class="margicon">Paris, Belleville</p>
+        </div>
+        <div class="greybackground flexcentrecolum headerwidth">
+            <h2 class="h2reservez">Réservez le menu qui vous convient</h2>
+            <p class="pdecouvrez">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+            <a class="btnprincipal shadow nondecocontact" href="#restaurants">
+                <P>Explorer nos restaurants</P>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section1size">
+            <!--Section 1 Fonctionnement-->
+            <h1 class="textfonctionnement">Fonctionnement</h1>
+            <div class="flexcentrecolumbtn">
+                <button class="flexbtn btnsecondaire greybackground shadow">
+                    <div class="section1numbers flexcentre">1</div>
+                    <div class="section1icons icon-color flexcentre"><i class="fas fa-mobile-alt"></i></div>
+                    <a href="#restaurants" class="nodeco">Choisissez un restaurant</a>
+                </button>
+                <button class="flexbtn btnsecondaire greybackground shadow">
+                    <div class="section1numbers flexcentre">2</div>
+                    <div class="section1icons icon-color flexcentre"><i class="fas fa-list-ul"></i></div>
+                    <a href="#" class="nodeco">Composez votre menu</a>
+                </button>
+                <button class="flexbtn btnsecondaire greybackground shadow">
+                    <div class="section1numbers flexcentre">3</div>
+                    <div class="section1icons icon-color flexcentre"><i class="fas fa-store"></i></div>
+                    <a href="#" class="nodeco">Dégustez au restaurant</a>
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <!--Section 2 Restaurants-->
+            <div class="section2size greybackground" id="restaurants">
+                <h2 class="textrestaurants" id="restaurants">Restaurants</h2>
+                <div class="restaurantsblock">
+                    <div class="boxrestaurants nouveauoverimg">
+                        <a href="Menu-1.html" class="nondecotexts">
+                            <img class="cartebox" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                alt="La palette du goût">
+                            <div class="nouveaubox flexcentre">Nouveau</div>
+                            <div class="textcartebox heartover">
+                                <P class="textcarte">La palette du goût</P>
+                                <p class="textcartesec">Ménilmontant</p>
+                                <i class="hearticonbtn fas fa-heart"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="boxrestaurants nouveauoverimg">
+                        <a href="Menu-2.html" class="nondecotexts">
+                            <img class="cartebox" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                alt="La notte enchantée">
+                            <div class="nouveaubox flexcentre">Nouveau</div>
+                            <div class="textcartebox heartover">
+                                <P class="textcarte">La notte enchantée</P>
+                                <p class="textcartesec">Charonne</p>
+                                <i class="hearticonbtn fas fa-heart"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="boxrestaurants">
+                        <a href="Menu-3.html" class="nondecotexts">
+                            <img class="cartebox" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                alt="A la française">
+                            <div class="textcartebox heartover">
+                                <P class="textcarte">À la française</P>
+                                <p class="textcartesec">Cité Rouge</p>
+                                <i class="hearticonbtn fas fa-heart"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="boxrestaurants">
+                        <a href="Menu-4.html" class="nondecotexts">
+                            <img class="cartebox"
+                                src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="Le délice des sens">
+                            <div class="textcartebox heartover">
+                                <P class="textcarte">Le délice des sens</P>
+                                <p class="textcartesec">Folie-Méricourt</p>
+                                <i class="hearticonbtn fas fa-heart"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footersize">
+        <div class="margfooter">
+            <img class="footerimgsize" src="images/logo/ohmyfood.png" alt="homyfood">
+            <div class="footeritemsaling">
+                <i class="fas fa-utensils"></i>
+                <p class="padfootertext1">Proposer un restaurant</p>
+            </div>
+            <div class="footeritemsaling">
+                <i class="fas fa-hands-helping fa-xs"></i>
+                <p class="padfootertext2">Devenir partenaire</p>
+            </div>
+            <p class="martextfooter">Mentions légales</p>
+            <a href="mailto:homyfood@hotmail.com" class="nondecocontact">
+                <p>Contact</p>
+            </a>
+        </div>
+    </footer>
+</body>
