@@ -2,3 +2,593 @@
 @import "./utils/mixins";
 @import "./utils/placeholders";
 
+.btnheartnew
+{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+}
+
+body
+{
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif
+}
+body
+{
+    margin: 0px;
+}
+
+/*generique*/
+.fontshrikhand
+{
+    font-family: 'Shrikhand', cursive;
+}
+
+.flexcentre
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbetween
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexcentrecolum
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.flexcentrecolumbtn
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 270px; 
+}
+
+.flexcartescolum
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shadow
+{
+    box-shadow: 1px 4px 10px rgb(211, 211, 211);
+}
+
+.nondecotexts
+{
+    text-decoration: none;
+    color:black;
+}
+.nondecocontact
+{
+    text-decoration: none;
+    color:white;
+}
+.greybackground
+{
+    background-color: #fafafa;
+}
+
+.flexbtn
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.btnprincipal
+{
+    width: 220px;
+    height: 53px;
+    color: whitesmoke;
+    border-radius: 30px;
+    font-weight:normal;
+    font-size: 16px;
+    border: none;
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btnprincipal:hover
+{
+    background-image: linear-gradient(to top, #9256dcce, #ff79d9d2);
+    box-shadow: 1px 4px 3px rgb(197, 197, 197);
+
+}
+
+.btnsecondaire
+{
+    width: 310px;
+    height: 75px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/*loader*/
+.loader_bg
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-top: 7px solid #99E2D0;
+    border-bottom: 7px solid #99E2D0;
+    animation: rotate 2s linear infinite;
+}
+
+
+  
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+    
+  }
+
+.loaderfadeout
+{
+    animation: ease-out 5s;
+}
+
+@keyframes fadeOut
+  {
+    from{z-index: 1;
+       
+    }
+    to{
+         z-index: -1;
+    }
+   }
+  
+
+/*navigation*/
+.Nav
+{
+    top: 0px;
+    display: block;
+    width: 100%;
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 12.5px;
+    z-index: 2;
+    box-shadow: 0px 2px 6px rgb(172, 172, 172);
+}
+.Nav img
+{
+    display: block;
+    margin: auto;
+    width: 170px;
+}
+
+/*map*/
+.margtop
+{
+    margin-top: 4px;
+}
+
+.map
+{
+    width: 100%;
+    height: 50px;
+    background-color: #e9e9e9;
+    margin: auto;
+    font-weight: bold;
+}
+
+.margicon
+{
+    margin-right: 18px;
+    color: rgb(82, 82, 82);
+}
+
+/*header*/
+.headerwidth
+{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.h2reservez
+{
+    margin: -20px 0px 0px 0px;
+    width: 70%;
+}
+
+.pdecouvrez
+{
+    font-size: 18px;
+    color: rgb(102, 102, 102);
+}
+
+/*section1fonctionnement*/
+.section1size
+{
+    width: 100%;
+    height: 370px;
+    background: white;
+}
+.textfonctionnement
+{
+    padding-top: 55px;
+    font-size: 23px;
+    padding-left: 15px;
+    margin-top: 0px;
+}
+
+.section1numbers
+{
+    width: 25px;
+    height: 25px;
+    color: white;
+    background-color: #9356DC;
+    border-radius: 30px;
+    margin-left: -20px;
+}
+
+.section1icons
+{
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+    color: rgb(116, 116, 116);
+}
+.btnsecondaire:hover
+{
+    background-color: #dcc7f765;
+}
+.btnsecondaire:hover>.icon-color
+{
+    color:  #9356DC;
+}
+
+.icon-color:hover
+{
+    color: #9356DC;
+}
+
+.nodeco
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/*section2restaurants*/
+
+.section2size
+{
+    width: 100%;
+    height: 1280px;
+}
+
+.textrestaurants
+{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.restaurantsblock
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center; 
+
+}
+
+.boxrestaurants
+{
+    width: 90%;
+    border-radius: 17px;
+    box-shadow: 6px 6px 5px rgb(197, 197, 197);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.cartebox
+{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.nouveauoverimg
+{
+    position: relative;
+}
+.nouveaubox
+{
+    display: flex;
+    width: 90px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(56, 146, 97);
+    background-color: #99E2D0;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+}
+
+.textcartebox
+{
+    width: 90%;
+    margin-left: 10px;
+    margin-top: -5px;
+    font-size: 13px;
+}
+
+.textcarte
+{
+    font-weight: 750;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.textcartesec
+{
+    font-size: 19px;
+    margin-top: -10px;
+}
+
+.heartover
+{
+    position: relative;
+}
+
+.hearticonbtn
+{
+    position: absolute;
+    font-size: 25px;
+    top: 7px;
+    right: 0PX;
+}
+
+/*section2restaurants*/
+.footersize
+{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(61, 60, 60);
+    flex-direction: column;
+    color: white;
+}
+
+.footerimgsize
+{
+    width: 105px;
+    height: 18px;
+    margin-top: 20px;
+    filter: brightness(100);
+}
+
+.footeritemsaling
+{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+.padfootertext1
+{
+    padding-left: 10px;
+}
+
+.padfootertext2
+{
+    padding-left: 8px;
+}
+
+.martextfooter
+{
+    margin-bottom: -5px;
+}
+
+.margfooter
+{
+    margin-left: 20px;
+}
+
+/*menus*/
+.arrowcolor
+{
+    color: black;
+}
+
+.Navmenu
+{
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+.Navmenu img
+{
+    display: block;
+    margin: auto;
+    width: 170px;
+    margin-left: 60px;
+}
+
+.backbtn
+{
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.menutopimg
+{
+    width: 100%;
+    height: 250px;
+}
+.menuimgbox 
+{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.menusectionsize
+{
+    width: 100%;
+    height: 1200px;
+    background-color: #f2f2f2;
+    border-radius: 40px 40px 0px 0px;
+    position: absolute;
+    margin-top: -25px;
+}
+
+.menusectionsizelanote
+{
+    width: 100%;
+    height: 1285px;
+    background-color: #f2f2f2;
+    border-radius: 40px 40px 0px 0px;
+    position: absolute;
+    margin-top: -25px;
+}
+
+.menutexttop
+{
+    padding-top: 40px;
+    font-size: 26px;
+    padding-left: 20px;
+    margin-top: 0px;
+}
+
+.heartovermenu
+{
+    position: relative;
+}
+.heartmenu
+{
+    position: absolute;
+    font-size: 25px;
+    top: 45px;
+    right: 40PX;
+}
+
+
+
+.menutextunderline 
+{
+    margin-left: 20px;
+    border-bottom: 3px solid #99E2D0;
+    width: 45px;
+}
+
+.btnsecondairemenus
+{
+    width: 330px;
+    height: 70px;
+    border-radius: 22px;
+    border: none;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.btnmenustyle
+{
+    padding-left: 15px;
+}
+
+.menufadein1
+{
+    animation: fadeIn 2s;
+}
+.menufadein2
+{
+    animation: fadeIn 3s;
+}
+.menufadein3
+{
+    animation: fadeIn 4s;
+}
+.menufadein4
+{
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.btnmenupad
+{
+    padding-left: 10px;
+}
+
+.stylebtnmenus1
+{
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.stylebtnmenus2
+{
+    padding-bottom: 5px;
+    margin-top: -1px;
+    font-size: 15px;
+}
+
+.pricestyle
+{
+    align-self: end;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.marginmenus
+{
+    margin-top: 40px;
+}
+
+.btnprincipalmenus
+{
+    margin-top: 30px;
+    margin-left: 80px;
+    width: 50%;
+}
