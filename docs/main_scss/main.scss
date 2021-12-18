@@ -374,9 +374,18 @@ body
     font-size: 25px;
     top: 7px;
     right: 0PX;
-    color: blueviolet;
+    opacity: 0;
+    background: linear-gradient(#fd8fde, #a777e2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform-origin: center;
+    transform: scale(1.1);
+    &:hover{
+        opacity: 1;
+        transition: opacity 1.5s;  
+    }
 }
-
 
 
 /*section2restaurants*/
@@ -429,6 +438,32 @@ body
 .arrowcolor
 {
     color: black;
+}
+
+.heartmenuanimation
+{
+    position: absolute;
+    font-size: 25px;
+    top: 47px;
+    right: 27PX;
+}
+.heartmenufullanimation
+{
+    position: absolute;
+    font-size: 25px;
+    top: 47px;
+    right: 27px;
+    opacity: 0;
+    background: linear-gradient(#fd8fde, #a777e2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform-origin: center;
+    transform: scale(1.1);
+    &:hover{
+        opacity: 1;
+        transition: opacity 1.5s;  
+    }
 }
 
 .Navmenu
@@ -507,8 +542,6 @@ body
     top: 45px;
     right: 40PX;
 }
-
-
 
 .menutextunderline 
 {

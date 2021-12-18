@@ -429,21 +429,22 @@ body {
   font-size: 25px;
   top: 7px;
   right: 0PX;
-  color: red;
-  opacity: 0.3;
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fd8fde), to(#a777e2));
+  background: linear-gradient(#fd8fde, #a777e2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.hearticonbtnfull:hover::after {
-  opacity: 0.3;
-}
-
-.hearticonbtnfull::after {
-  content: "";
-  position: absolute;
-  color: blue;
-  opacity: 0.3;
-  -webkit-transition: opacity 2.5s;
-  transition: opacity 2.5s;
+.hearticonbtnfull:hover {
+  opacity: 1;
+  -webkit-transition: opacity 1.5s;
+  transition: opacity 1.5s;
 }
 
 /*section2restaurants*/
@@ -499,6 +500,36 @@ body {
 /*menus*/
 .arrowcolor {
   color: black;
+}
+
+.heartmenuanimation {
+  position: absolute;
+  font-size: 25px;
+  top: 47px;
+  right: 27PX;
+}
+
+.heartmenufullanimation {
+  position: absolute;
+  font-size: 25px;
+  top: 47px;
+  right: 27px;
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fd8fde), to(#a777e2));
+  background: linear-gradient(#fd8fde, #a777e2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.heartmenufullanimation:hover {
+  opacity: 1;
+  -webkit-transition: opacity 1.5s;
+  transition: opacity 1.5s;
 }
 
 .Navmenu {
