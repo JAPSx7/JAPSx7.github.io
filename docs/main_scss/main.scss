@@ -696,6 +696,9 @@ body
         min-width: 180px;
         margin: 20px;
     }
+    .btnmenustyle{
+        margin-left: 0px;
+    }
 
     .textrestaurants{
         display: flex;
@@ -724,25 +727,43 @@ body
         height: 50px;
         margin-top: 0px;
     }
-  }
 
-  @media screen and (min-width: 992px)
-  {
-      .Nav{
-          height: 80px;
-          padding-bottom: 0px;
-      }
-      .Nav img{
-          width: 300px;
-      }
-      .section2size{
-          height: 700px;
-      }
-      .flexcentrecolumbtn{
-          margin-right: 100px;
-          margin-left: 100px;
-      }
-      .block1responsive{
+    .Navmenu img{
+        width: 300px;
+        margin-left: auto;
+    }
+    .menutexttop{
+        justify-content: center;
+        display: flex;
+        font-size: 40px;
+    }
+    .menutextunderline{
+        margin-left: 0px;
+    }
+    .menusectionsize{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .btnprincipalmenus{
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        width: 200px;
+    }
+    .btnsecondairemenus{
+        width: 430px;
+    }
+    .section2size{
+        height: 700px;
+    }
+    .flexcentrecolumbtn{
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+    .block1responsive{
         display: flex;
         flex-direction: row;
         width: 90%;  
@@ -755,4 +776,16 @@ body
     .boxrestaurants{
         margin: 20px;
     }
+  }
+
+  @media screen and (min-width: 992px)
+  {
+    .Nav{
+        height: 80px;
+        padding-bottom: 0px;
+    }
+    .Nav img{
+        width: 300px;
+    }
+
   }
