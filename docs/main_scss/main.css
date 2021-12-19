@@ -613,17 +613,8 @@ body {
   width: 45px;
 }
 
-.btnsecondairemenus {
-  width: 330px;
-  height: 70px;
-  border-radius: 22px;
-  border: none;
-  background-color: white;
-  margin-bottom: 15px;
-}
-
 .btnmenustyle {
-  padding-left: 15px;
+  margin-left: 15px;
 }
 
 .menufadein1 {
@@ -669,38 +660,61 @@ body {
 }
 
 .stylebtnmenus1 {
+  width: auto;
   margin-bottom: 7px;
   font-weight: bold;
   font-size: 17px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .stylebtnmenus2 {
+  width: auto;
   padding-bottom: 5px;
   margin-top: -1px;
   font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .pricestyle {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  padding-right: 20px;
   font-weight: bold;
-}
-
-.marginmenus {
-  margin-top: 40px;
+  margin-right: 20px;
 }
 
 .btnprincipalmenus {
   margin-top: 30px;
   margin-left: 80px;
   width: 50%;
+}
+
+.marginmenus {
+  margin-top: 40px;
+}
+
+.btnsecondairemenus {
+  width: 330px;
+  height: 70px;
+  border-radius: 22px;
+  border: none;
+  background-color: white;
+  margin-bottom: 15px;
+  cursor: pointer;
   overflow: hidden;
 }
 
+.btnsecondairemenus:hover > .animationbtnmenu {
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
 .animationbtnmenu {
-  width: 70px;
+  width: 25%;
   height: 70px;
   position: relative;
   background: #99E2D0;
@@ -714,6 +728,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
 
 .animationcheck {
@@ -733,6 +752,109 @@ body {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .section1size {
+    height: 270px;
+  }
+  .textfonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .flexcentrecolumbtn {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 150px;
+  }
+  .btnsecondaire {
+    min-width: 180px;
+    margin: 20px;
+  }
+  .textrestaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 0px;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footersize {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 150px;
+  }
+  .margfooter {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .footeritemsaling {
+    margin-bottom: 0px;
+  }
+  .footerimgsize {
+    width: 150px;
+    height: 50px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Nav {
+    height: 80px;
+    padding-bottom: 0px;
+  }
+  .Nav img {
+    width: 300px;
+  }
+  .section2size {
+    height: 700px;
+  }
+  .flexcentrecolumbtn {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .block1responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90%;
+  }
+  .block2responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90%;
+  }
+  .boxrestaurants {
+    margin: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

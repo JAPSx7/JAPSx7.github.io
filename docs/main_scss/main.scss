@@ -546,23 +546,13 @@ body
 .menutextunderline 
 {
     margin-left: 20px;
-    border-bottom: 3px solid #99E2D0;
+    border-bottom: 3px solid $third_color;
     width: 45px;
-}
-
-.btnsecondairemenus
-{
-    width: 330px;
-    height: 70px;
-    border-radius: 22px;
-    border: none;
-    background-color: white;
-    margin-bottom: 15px;
 }
 
 .btnmenustyle
 {
-    padding-left: 15px;
+    margin-left: 15px;
 }
 
 .menufadein1
@@ -597,27 +587,30 @@ body
 
 .stylebtnmenus1
 {
+    width: auto;
     margin-bottom: 7px;
     font-weight: bold;
     font-size: 17px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .stylebtnmenus2
 {
+    width: auto;
     padding-bottom: 5px;
     margin-top: -1px;
     font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .pricestyle
 {
     align-self: end;
-    padding-right: 20px;
     font-weight: bold;
-}
-
-.marginmenus
-{
-    margin-top: 40px;
+    margin-right: 20px;
 }
 
 .btnprincipalmenus
@@ -625,13 +618,38 @@ body
     margin-top: 30px;
     margin-left: 80px;
     width: 50%;
-    overflow: hidden; 
-    &:hover{}
 }
+
+.marginmenus
+{
+    margin-top: 40px;
+}
+
+.btnsecondairemenus
+{
+    width: 330px;
+    height: 70px;
+    border-radius: 22px;
+    border: none;
+    background-color: white;
+    margin-bottom: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover
+    {
+        & > .animationbtnmenu
+        {
+            
+            transform: translate(-50%, 0)
+            
+        }
+    }
+}
+
 
 .animationbtnmenu
 {
-    width: 70px;
+    width: 25%;
     height: 70px;
     position: relative;
     background: $third_color;
@@ -639,10 +657,9 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    transition: transform 0.2s ease-in;
 }
-
-
-
 
 .animationcheck
 {
@@ -657,4 +674,85 @@ body
         transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
     
+  }
+
+
+
+  @media screen and (min-width: 550px)
+  {
+    .section1size{
+        height: 270px;
+    }
+    .textfonctionnement{
+        display: flex;
+        padding-left: 0px;
+        justify-content: center;
+    }
+    .flexcentrecolumbtn{
+        flex-direction: row;
+        height: 150px;
+    }
+    .btnsecondaire{
+        min-width: 180px;
+        margin: 20px;
+    }
+
+    .textrestaurants{
+        display: flex;
+        padding-top: 20px;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footersize{
+        display: flex;
+        justify-content: center;
+        height: 150px;
+    }
+    .margfooter{
+        justify-content: space-around;
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .footeritemsaling{
+        margin-bottom: 0px;
+    }
+    .footerimgsize{
+        width: 150px;
+        height: 50px;
+        margin-top: 0px;
+    }
+  }
+
+  @media screen and (min-width: 992px)
+  {
+      .Nav{
+          height: 80px;
+          padding-bottom: 0px;
+      }
+      .Nav img{
+          width: 300px;
+      }
+      .section2size{
+          height: 700px;
+      }
+      .flexcentrecolumbtn{
+          margin-right: 100px;
+          margin-left: 100px;
+      }
+      .block1responsive{
+        display: flex;
+        flex-direction: row;
+        width: 90%;  
+    }
+    .block2responsive{
+        display: flex;
+        flex-direction: row;
+        width: 90%;  
+    }
+    .boxrestaurants{
+        margin: 20px;
+    }
   }
