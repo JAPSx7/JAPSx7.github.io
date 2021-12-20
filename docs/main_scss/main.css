@@ -867,29 +867,6 @@ body {
     margin-right: 100px;
     margin-left: 100px;
   }
-  .block1responsive {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 90%;
-  }
-  .block2responsive {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 90%;
-  }
-  .boxrestaurants {
-    margin: 20px;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -899,6 +876,9 @@ body {
   }
   .Nav img {
     width: 300px;
+  }
+  .boxrestaurants {
+    margin: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

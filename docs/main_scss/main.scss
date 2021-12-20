@@ -763,19 +763,7 @@ body
         margin-right: 100px;
         margin-left: 100px;
     }
-    .block1responsive{
-        display: flex;
-        flex-direction: row;
-        width: 90%;  
-    }
-    .block2responsive{
-        display: flex;
-        flex-direction: row;
-        width: 90%;  
-    }
-    .boxrestaurants{
-        margin: 20px;
-    }
+    
   }
 
   @media screen and (min-width: 992px)
@@ -786,6 +774,10 @@ body
     }
     .Nav img{
         width: 300px;
+    }
+    
+    .boxrestaurants{
+        margin: 20px;
     }
 
   }
