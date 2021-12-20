@@ -73,7 +73,7 @@ body
 }
 .greybackground
 {
-    background-color: #fafafa;
+    background-color: $gray;
 }
 
 .flexbtn
@@ -99,7 +99,7 @@ body
 
 .btnprincipal:hover
 {
-    background-image: linear-gradient(to top, $primary_color, $secondary_color);
+    background-image: linear-gradient(to top, $primary_color, #ff79d9d2);
     box-shadow: 1px 4px 3px rgb(197, 197, 197);
 
 }
