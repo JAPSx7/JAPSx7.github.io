@@ -782,6 +782,9 @@ body {
   .btnmenustyle {
     margin-left: 0px;
   }
+  .boxrestaurants {
+    width: 70%;
+  }
   .textrestaurants {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -861,11 +864,7 @@ body {
     width: 430px;
   }
   .section2size {
-    height: 700px;
-  }
-  .flexcentrecolumbtn {
-    margin-right: 100px;
-    margin-left: 100px;
+    height: 1330px;
   }
 }
 
@@ -879,6 +878,11 @@ body {
   }
   .boxrestaurants {
     margin: 20px;
+    width: 65%;
+  }
+  .flexcentrecolumbtn {
+    margin-right: 100px;
+    margin-left: 100px;
   }
 }
 /*# sourceMappingURL=main.css.map */
