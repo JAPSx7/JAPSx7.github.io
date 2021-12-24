@@ -205,6 +205,7 @@ body {
 @-webkit-keyframes fadeOut {
   from {
     opacity: 1;
+    z-index: 2;
   }
   to {
     opacity: 0;
@@ -215,6 +216,7 @@ body {
 @keyframes fadeOut {
   from {
     opacity: 1;
+    z-index: 2;
   }
   to {
     opacity: 0;
@@ -655,10 +657,6 @@ body {
   }
 }
 
-.btnmenupad {
-  padding-left: 10px;
-}
-
 .stylebtnmenus1 {
   width: auto;
   margin-bottom: 7px;
@@ -667,6 +665,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin-left: 10px;
 }
 
 .stylebtnmenus2 {
@@ -677,6 +676,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin-left: 10px;
 }
 
 .pricestyle {
@@ -684,7 +684,7 @@ body {
       -ms-grid-row-align: end;
       align-self: end;
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: -30px;
 }
 
 .btnprincipalmenus {
@@ -709,12 +709,14 @@ body {
 }
 
 .btnsecondairemenus:hover > .animationbtnmenu {
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  -webkit-animation: CourseSelection 1s;
+          animation: CourseSelection 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .animationbtnmenu {
-  width: 25%;
+  width: 0%;
   height: 70px;
   position: relative;
   background: #99E2D0;
@@ -728,11 +730,26 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
-  -webkit-transition: -webkit-transform 0.2s ease-in;
-  transition: -webkit-transform 0.2s ease-in;
-  transition: transform 0.2s ease-in;
-  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes CourseSelection {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@keyframes CourseSelection {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
 }
 
 .animationcheck {
@@ -742,17 +759,6 @@ body {
   color: #fff;
   -webkit-animation: rotate 0.75s linear;
           animation: rotate 0.75s linear;
-}
-
-@keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 @media screen and (min-width: 550px) {

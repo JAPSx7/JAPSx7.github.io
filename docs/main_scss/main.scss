@@ -149,7 +149,8 @@ body
   }
 @keyframes fadeOut
   {
-    from{opacity: 1;         
+    from{opacity: 1;
+        z-index: 2;         
     }
     to{
          opacity: 0;
@@ -580,11 +581,6 @@ body
     }
 }
 
-.btnmenupad
-{
-    padding-left: 10px;
-}
-
 .stylebtnmenus1
 {
     width: auto;
@@ -594,6 +590,7 @@ body
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin-left: 10px;
 }
 .stylebtnmenus2
 {
@@ -604,13 +601,14 @@ body
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin-left: 10px;
 }
 
 .pricestyle
 {
     align-self: end;
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: -30px;
 }
 
 .btnprincipalmenus
@@ -639,17 +637,15 @@ body
     {
         & > .animationbtnmenu
         {
-            
-            transform: translate(-50%, 0)
-            
+            animation: CourseSelection 1s;
+            animation-fill-mode: forwards;
         }
     }
 }
 
-
 .animationbtnmenu
 {
-    width: 25%;
+    width: 0%;
     height: 70px;
     position: relative;
     background: $third_color;
@@ -657,8 +653,16 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    transition: transform 0.2s ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes CourseSelection { 
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 25%;
+    }
 }
 
 .animationcheck
@@ -669,12 +673,10 @@ body
     color: $white;
     animation: rotate 0.75s linear;
 }
-@keyframes rotate{
-    0%{
-        transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
-    
-  }
+
+ 
+
+
 
 
 
