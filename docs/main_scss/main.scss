@@ -1,6 +1,5 @@
 @import "./utils/variables";
 @import "./utils/mixins";
-@import "./utils/placeholders";
 
 body
 {
@@ -85,10 +84,8 @@ body
 
 .btnprincipal
 {
-    width: 220px;
-    height: 53px;
+    @include btnprimary;
     color: whitesmoke;
-    border-radius: 30px;
     font-weight:normal;
     font-size: 16px;
     border: none;
@@ -106,10 +103,7 @@ body
 
 .btnsecondaire
 {
-    width: 310px;
-    height: 75px;
-    border-radius: 15px;
-    border: none;
+   @include btnsecondary;
     cursor: pointer;
 }
 

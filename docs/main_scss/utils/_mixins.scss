@@ -1,0 +1,12 @@
+@mixin btnprimary {
+    width: 220px;
+    height: 53px;
+    border-radius: 30px;
+}
+
+@mixin btnsecondary {
+    width: 310px;
+    height: 75px;
+    border-radius: 15px;
+    border: none;
+}
