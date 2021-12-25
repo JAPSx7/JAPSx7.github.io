@@ -855,7 +855,7 @@ body {
     font-size: 40px;
   }
   .menutextunderline {
-    margin-left: 0px;
+    margin-left: -2%;
   }
   .menusectionsize {
     display: -webkit-box;
