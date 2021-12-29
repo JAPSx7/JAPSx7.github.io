@@ -382,52 +382,6 @@ body
     }
 }
 
-/*section2restaurants*/
-.footersize
-{
-    width: 100%;
-    height: 200px;
-    background-color: rgb(61, 60, 60);
-    flex-direction: column;
-    color: $white;
-}
-
-.footerimgsize
-{
-    width: 105px;
-    height: 18px;
-    margin-top: 20px;
-    filter: brightness(100);
-}
-
-.footeritemsaling
-{
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    margin-bottom: -20px;
-}
-
-.padfootertext1
-{
-    padding-left: 10px;
-}
-
-.padfootertext2
-{
-    padding-left: 8px;
-}
-
-.martextfooter
-{
-    margin-bottom: -5px;
-}
-
-.margfooter
-{
-    margin-left: 20px;
-}
-
 /*menus*/
 .arrowcolor
 {
@@ -682,34 +636,47 @@ body
 }
 
 
+/*responsive*/
 
-
-  @media screen and (min-width: 550px)
-  {
-    .section1size{
-        height: 270px;
+@media screen and (min-width: 550px)
+{    
+    .section1size
+    {
+      height: 270px;
     }
-    .textfonctionnement{
+
+    .textfonctionnement
+    {
         display: flex;
         padding-left: 0px;
         justify-content: center;
     }
-    .flexcentrecolumbtn{
+
+    .flexcentrecolumbtn
+    {
         flex-direction: row;
         height: 150px;
     }
-    .btnsecondaire{
+
+    .btnsecondaire
+    {
         min-width: 180px;
         margin: 20px;
     }
-    .btnmenustyle{
+
+    .btnmenustyle
+    {
         margin-left: 0px;
         margin-right: 0px;
     }
-    .boxrestaurants{
+
+    .boxrestaurants
+    {
         width: 70%;
     }
-    .textrestaurants{
+
+    .textrestaurants
+    {
         display: flex;
         padding-top: 20px;
         padding-left: 0px;
@@ -717,55 +684,75 @@ body
         justify-content: center;
     }
 
-    .footersize{
+    .footersize
+    {
         display: flex;
         justify-content: center;
         height: 150px;
     }
-    .margfooter{
+
+    .margfooter
+    {
         justify-content: space-around;
         display: flex;
         margin-left: 10px;
         margin-right: 10px;
     }
-    .footeritemsaling{
+
+    .footeritemsaling
+    {
         margin-bottom: 0px;
     }
-    .footerimgsize{
+
+    .footerimgsize
+    {
         width: 150px;
         height: 50px;
         margin-top: 0px;
     }
 
-    .Navmenu img{
+    .Navmenu img
+    {
         width: 300px;
         margin-left: auto;
     }
-    .menutexttop{
+
+    .menutexttop
+    {
         justify-content: center;
         display: flex;
         font-size: 40px;
     }
-    .menutextunderline{
+
+    .menutextunderline
+    {
         margin-left: -2%;
     }
-    .menusectionsize{
+
+    .menusectionsize
+    {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: auto;
     }
-    .btnprincipalmenus{
+
+    .btnprincipalmenus
+    {
         margin-left: 0px;
         margin-top: 0px;
         margin-bottom: 20px;
         width: 200px;
     }
-    .btnsecondairemenus{
+
+    .btnsecondairemenus
+    {
         width: 430px;
     }
-    .section2size{
+
+    .section2size
+    {
         height: 1330px;
     }
     
@@ -773,19 +760,25 @@ body
 
   @media screen and (min-width: 992px)
   {
-    .Nav{
+    .Nav
+    {
         height: 80px;
         padding-bottom: 0px;
     }
-    .Nav img{
+
+    .Nav img
+    {
         width: 300px;
     }
     
-    .boxrestaurants{
+    .boxrestaurants
+    {
         margin: 20px;
         width: 65%;
     }
-    .flexcentrecolumbtn{
+
+    .flexcentrecolumbtn
+    {
         margin-right: 100px;
         margin-left: 100px;
     }
