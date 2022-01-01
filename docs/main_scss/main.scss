@@ -585,12 +585,13 @@ body
     {
         & > .animationbtnmenu 
         {
-            animation: CheckLine 0.75s;
-            animation-fill-mode: forwards;
+            transform: translateX(0);
+            visibility: visible;
+            padding: 40px;            
         }
         & > .btnmenupad
         {
-            width: 65%;
+           width: 65%
         }
         & .animationcheck
         {
@@ -601,7 +602,6 @@ body
 
 .animationbtnmenu
 {
-    width: 0%;
     height: 70px;
     position: relative;
     background: $third_color;
@@ -609,18 +609,13 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    animation-fill-mode: forwards;
+    transform: translate(75px);
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 500ms ease-in-out;
+   
 }
-@keyframes CheckLine { 
-    0%{
-        width: 0%;
-    }
 
-    100%{
-        width: 25%;
-        
-    }
-}
 
 .animationcheck
 {
